@@ -4,7 +4,7 @@ import numpy as np
 class Card: 
     def __init__(self,rank,suit):
         """
-        Initialize a deck of cards with given rank and suit
+        Initialize a single card with given rank and suit
         """
         self.rank = rank
         self.suit = suit
@@ -74,7 +74,7 @@ class CardDeck:
 
     def draw_and_remove(self):
         """
-        Draws and removes a random card from the deck
+        Draw and remove a random card from the deck
         """
         index = np.random.randint(len(self.cards))
         return self.cards.pop(index)

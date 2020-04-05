@@ -2,7 +2,7 @@ from game import game
 from tqdm import tqdm
 
 
-num_simulations = 1000000
+num_simulations = 100000
 wins = 0
 
 for i in tqdm(range(num_simulations)):
